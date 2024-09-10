@@ -3,13 +3,15 @@ using namespace std;
 
 int main()
 {
-    int num = 1;
-    for (int i = 0; i < 3; i++)
+
+    for (int i = 0; i < 4; i++)
     { // outer
+        char ch = 'A';
         for (int j = 0; j < i + 1; j++)
-        {
-            cout << num << " ";
-            num++;
+        { // innerLoop
+
+            cout << ch << " ";
+            ch = ch + 1;
         }
 
         cout << endl;
